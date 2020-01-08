@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Программа на Python, Часть 1</title>
+        <style>
+            @import "/Users/olgapechanko/Documents/workbox/SC1-68-20-master/olgapechanko/CSS/style_3.css" screen;
+            @import "/Users/olgapechanko/Documents/workbox/SC1-68-20-master/olgapechanko/CSS/style_4.css" print;
+    </style>
+    </head>
+    <body>
+        <h1>HOW-TO: Программа на Python, Часть 1</h1>	
+<!--images with links/ alt/ title-->
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python logo" title= "Программа на Python" height= "200"align="right"></p>
+        <ul>
+<!--links on the pages-->
+            <li><i><a href="https://www.google.com/python_01_link.html">Программа на Python — часть 1</a></i></li>
+            <li><i><a href="https://www.google.com/python_02_link.html">Программа на Python — часть 2</a></i></li>
+            <li><i><a href="https://www.google.com/python_03_link.html">Программа на Python — часть 3</a></i></li>
+        </ul>
+        <h2>Содержание</h2>
+        <h3>HOW-TO: Программа на Python, Часть 1</h3>
+        <ul>
+<!--section links-->
+            <li><a href="#t1">Наша первая программа</a></li>
+            <li><a href="#t2">Пример цикла For</a></li>
+        </ul>
+        <p>Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+        Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+        состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+        для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+        программирование графических интерфейсов <u>(GUI)</u>. Давайте создадим простую программу прямо
+        сейчас.</p>
+<!--id identifier-->
+        <h2 id="t1">Наша первая программ</h2>
+<!--content link-->
+        <a href="#">К содержанию</a>
+        <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает каждая
+        строка и пойдём дальше.</p>
+        <p>Введите эти 4 строки:</p>
+        <pre>
+#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"
+        </pre>
+        <p>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+        <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать программу на
+        Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале</p>
+        <p><b>chmod +x hello.py</b></p>
+        <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+        <pre>
+greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$
+        </pre>
+        <p>Вот и всё.</p>
+        <h2 id="t2">Пример цикла For</h2>
+<!--content link-->
+        <a href="#">К содержанию</a>
+        <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и
+        наберите следующую программу:</p>
+        <pre>
+#!/usr/bin/env python
+for cntr in range(0,10):
+print cntr
+        </pre>
+        <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i> Это важно. В Python для
+        указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках
+        программирования, а отступы.</p>
+<!--images with links-->
+        <p>
+            <a href= "#"><img src="http://clipart.nicubunu.ro/svg/arrows/arrow07_3.svg"alt="arrow left" title ="переход на предыдущую страницу" height="50" align= "left"></a>
+            <a href= "#"><img src="http://clipart.nicubunu.ro/svg/arrows/arrow07_1.svg" alt="arrow right" title ="переход на начало страницуы" height="50" align= "right"></a>
+            <a href="#"><div style="text-align: center;"><img aligh="center" src="http://clipart.nicubunu.ro/svg/symbols/house.svg" alt="home" title ="переход на cодержание" height="50"></div></a>
+        </p>
+    </body>
+</html>
