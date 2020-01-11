@@ -4,19 +4,22 @@
         <META charset="utf-8"> 
         <TITLE>Оформление списков и контейнеров</TITLE> 
         <style>
-            .block {
+            .ol{
+                width: 350px;
+                list-style-type: upper-roman;
+            }
+            .container {
                 background-color: black;
                 white-space: pre;
                 color: green;
                 width: 400px;
-                line-height: 20px;
-                max-height: 60px;
+                max-height: 80px;
                 overflow: auto
             }
         </style>
     </HEAD>
     <BODY>
-        <ol type="I"><!--Заглавная римская цифра-->
+        <div class="ol">
             <li><b>Контейнер с кодом</b></li>
                  <ol type="i"><!--Строчная римская цифра-->
                     <li> Цвет фона: черный</li> 
@@ -31,10 +34,10 @@
                     <li> Тип списка: римские цифры</li>
                     <li> Тип вложенного списка: римские нижний регистр цифры</li>
                  </ol>
-        <div class="block">
-            #!/usr/bin/env Python
-            print 'Hello. I am a python program.'
-            name = raw_input ("What is your name?")
-            print "Hello there," + name + "!"
-        </div>
+        <div class="container">#!/usr/bin/env Python
+print 'Hello. I am a python program.'
+name = raw_input ("What is your name?")
+print "Hello there," + name + "!"</div>
         </ol>
+    </body>
+</HTML>
